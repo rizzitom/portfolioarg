@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Curriculum vitæ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="cv_RE.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="js/script.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+
+<div class="inner-width">
+  <h1>I</h1>
+  <div class="menu-icon">
+    <i class="fas fa-align-right"></i>
+  </div>
+</div>
+<div class="navigation-menu">
+  <nav>
+    <ul>
+    <li><a class="active" href="CV.html">[I] A propos de moi</a></li>
+    <li><a class="active" href="CV-exp.html">[II] Expériences</a></li>
+    <li><a class="active" href="Cv-formation.html">[III] Formations</a></li>
+    <li><a href="CV-Comp.html">[IV] Compétences</a></li>
+    <li><a href="CV-ci.html">[V] Loisirs / CI</a></li>
+    <li><a class="rm" href="index.html">Retourner page d'Acceuil</a></li>
+  </ul>  
+  </nav>
+</div>
+  <section>
+      <div class="photo">
+          <img src="img/photo2.png" alt="Ma photo de profil">
+      </div>
+      <div class="prez">
+          <h2>A propos de moi</h2>
+          <p>Bonjour, Je m'appelle Tom. Je suis un étudiant première année en BTS SIO, j'aime me lancer de nouveaux défis et m'acquitter de tâches toujours plus ardues pour constamment progresser. Je recherche présentement un stage pour le 27 mai jusqu'au 28 juin, si possible dans le développement et son environnement Web. Ce stage serait un moyen concret d'acquérir une expérience concrète, car il permettrait en vain un approfondissement pratique de ce qui m'a été enseigné jusqu'à maintenant théoriquement, comme dirait Pierre Desproges avec sa citation humoristique que j'aime beaucoup "Un jour j'irai vivre en Théorie, car en Théorie tout se passe bien." J'ai quand même, de mon côté, avancé personnellement côté pratique par intéressement sincère dans le développement Web et son environnement. Je vous laisse donc consulter la suite du portfolio, merci pour l'attention que vous accorderez à celui-ci.</p>      
+        </div>
+      <div class="contact">
+          <h2>Informations</h2>
+          <div class="contact-flex">
+           <p><strong>Nom :</strong></p>  
+              <p>Rizzi Tom</p>
+          </div>
+          <div class="contact-flex">
+              <p><strong>Téléphone :</strong></p>
+              <p>07.70.02.65.28</p>
+          </div>
+          <div class="contact-flex">
+              <p><strong>Email :</strong></p>
+              <p><a href="rizzitom60@gmail.com">rizzitom60@gmail.com</a></p>
+          </div>
+          <p><a class="rm" href="CV-exp.html">Page suivante</a></p>
+          </div>
+          <script>
+            $(".menu-icon").click(function(){
+              $(this).toggleClass("active");
+              $(".navigation-menu").toggleClass("active");
+              $(".menu-icon i").toggleClass("fa-times");
+            });
+          </script>
+          </section>
+        </body>
+        </html>
+
+ 
